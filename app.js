@@ -5,9 +5,15 @@ const schema = require('./schema/schema');
 const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 8090;
+const path = require('path');
 
 // Cors
 app.use(cors());
+app.use(express.static(path.join(__dirname, 'build')));
+
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 // mongoose
 // mongoose.connect("mongodb://127.0.0.1:27017/bikroy");
