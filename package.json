@@ -1,0 +1,25 @@
+{
+  "name": "to-do-app-server",
+  "version": "1.0.0",
+  "description": "A simple to do app server",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "my": "nodemon app"
+  },
+  "engines": {
+    "node": "9.0.0"
+  },
+  "keywords": [
+    "todo"
+  ],
+  "author": "Hashemi Rafsan",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.13.2",
+    "mongoose": "^5.2.8"
+  }
+}
